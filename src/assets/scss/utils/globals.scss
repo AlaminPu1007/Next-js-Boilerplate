@@ -1,0 +1,14 @@
+// import scss files
+@import './_variables.scss';
+@import './footer-styles.scss';
+
+body {
+    background-color: var(--body-bg) !important;
+}
+
+/* global container */
+.container {
+    @media (min-width: 1400px) {
+        max-width: var(--container-max-width);
+    }
+}
