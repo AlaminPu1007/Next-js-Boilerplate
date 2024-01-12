@@ -22,4 +22,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 # DEMO IMAGE
 
-![CHEESE!](./public/demo.png)
+![CHEESE!](./public/example.png)
