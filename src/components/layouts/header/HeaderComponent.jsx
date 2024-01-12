@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -18,10 +17,10 @@ const HeaderComponent = () => {
                         <Nav.Link as={Link} href='/dashboard'>
                             dashboard
                         </Nav.Link>
-                        <Nav.Link as={Link} href='#features'>
+                        <Nav.Link as={Link} href='/features'>
                             Features
                         </Nav.Link>
-                        <Nav.Link as={Link} href='#pricing'>
+                        <Nav.Link as={Link} href='/pricing'>
                             Pricing
                         </Nav.Link>
                     </Nav>

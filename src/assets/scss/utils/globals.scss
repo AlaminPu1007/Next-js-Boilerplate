@@ -12,3 +12,121 @@ body {
         max-width: var(--container-max-width);
     }
 }
+.scroll-parent {
+    position: relative;
+    height: 50px;
+    overflow-x: hidden;
+}
+
+.scroll-element {
+    display: flex;
+    gap: 3rem;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    animation: primary 3s linear infinite;
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        gap: 20px;
+    }
+}
+
+.primary {
+    animation: primary 20s linear infinite;
+    overflow: hidden;
+}
+
+.secondary {
+    animation: secondary 20s linear infinite;
+}
+
+@keyframes primary {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes secondary {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.slider-widget {
+    position: relative;
+    overflow: hidden;
+    --White: #fff;
+    --WhiteToBlur: #ffffff00;
+
+    &::before,
+    &::after {
+        content: '';
+        height: 100%;
+        width: 150px;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+        background: linear-gradient(to right, var(--White), var(--WhiteToBlur));
+    }
+
+    &::after {
+        right: 0px !important;
+        background: linear-gradient(to left, var(--White), var(--WhiteToBlur));
+    }
+}
+
+.slider-widget img {
+    height: 32px;
+    margin: 0 calc(clamp(40px, 3.8888888vw, 56px) / 2);
+    height: clamp(98px, 9.7222vw, 140px);
+    margin: 0 calc(clamp(16px, 1.6666666vw, 24px) / 2);
+    max-width: initial;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.slider-animation-wrapper {
+    --animation-duration-value: 20s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-animation: slideAnimation var(--animation-duration-value) linear infinite;
+    animation: slideAnimation var(--animation-duration-value) linear infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes slideAnimation {
+    0% {
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-50%));
+        -ms-transform: translateX(calc(-50%));
+        transform: translateX(calc(-50%));
+    }
+}

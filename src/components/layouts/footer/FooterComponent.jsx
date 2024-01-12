@@ -13,19 +13,19 @@ const FooterComponent = () => {
                                 <h4>Services</h4>
                                 <ul>
                                     <li>
-                                        <a href='#'>Lorem Ipsum</a>
+                                        <a href='#'>Home</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Simply dummy text</a>
+                                        <a href='#'>Dashboard</a>
                                     </li>
                                     <li>
-                                        <a href='#'>The printing and typesetting </a>
+                                        <a href='#'>About</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Standard dummy text</a>
+                                        <a href='#'>Blog</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Type specimen book</a>
+                                        <a href='#'>Support</a>
                                     </li>
                                 </ul>
                             </div>
@@ -36,19 +36,19 @@ const FooterComponent = () => {
                                 <h4>Page Link</h4>
                                 <ul>
                                     <li>
-                                        <a href='#'>Lorem Ipsum</a>
+                                        <a href='#'>Home</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Simply dummy text</a>
+                                        <a href='#'>Dashboard</a>
                                     </li>
                                     <li>
-                                        <a href='#'>The printing and typesetting </a>
+                                        <a href='#'>About</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Standard dummy text</a>
+                                        <a href='#'>Blog</a>
                                     </li>
                                     <li>
-                                        <a href='#'>Type specimen book</a>
+                                        <a href='#'>Support</a>
                                     </li>
                                 </ul>
                             </div>
@@ -101,7 +101,7 @@ const FooterComponent = () => {
                     <div className='row'>
                         <div className='col-lg-12 col-sm-12 col-xs-12'>
                             <p className='copyright'>
-                                Copyright © 2019 <a href='#'>Akdesign</a>.
+                                Copyright © 2024 <a href='#'>ALAMIN</a>.
                             </p>
                         </div>
                         {/*- END COL */}
