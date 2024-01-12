@@ -70,7 +70,7 @@ const FooterComponent = () => {
                                     </form>
                                 </div>
                             </div>
-                            <div className='social_profile'>
+                            {/* <div className='social_profile'>
                                 <ul>
                                     <li>
                                         <a href='#'>
@@ -93,7 +93,7 @@ const FooterComponent = () => {
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                         {/*- END COL */}
                     </div>
