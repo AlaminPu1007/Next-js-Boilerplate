@@ -63,8 +63,13 @@ body {
 }
 
 .slider-widget {
-    position: relative;
     overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
     --White: #fff;
     --WhiteToBlur: #ffffff00;
 
@@ -98,7 +103,7 @@ img {
 }
 
 .slider-animation-wrapper {
-    --animation-duration-value: 20s;
+    --animation-duration-value: 50s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
